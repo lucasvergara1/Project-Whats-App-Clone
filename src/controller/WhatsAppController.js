@@ -207,14 +207,13 @@ class WhatsAppController {
             this.el.panelCamera.addClass('open');
             this.el.panelCamera.css({
                 'height':'calc(100% - 120px)'
-
             });
 
         });  
 
         this.el.btnClosePanelCamera.on('click', e=>{
 
-            this.el.panelCamera.removeClass('open');
+            this.closeAllMainPanel();
             this.el.panelMessagesContainer.show();
 
         });
@@ -231,14 +230,38 @@ class WhatsAppController {
             this.el.panelDocumentPreview.addClass('open');
             this.el.panelDocumentPreview.css({
                 'height':'calc(100% - 120px)'
+            });
 
-
-                
         });  
+
+        this.el.btnClosePanelDocumentPreview.on('click', e=> {
+
+            this.closeAllMainPanel();
+            this.el.panelMessagesContainer.show();
+
+        });
+
+
+        this.el.btnSendDocument.on('click', e=> {
+
+            console.log('send documment');
+
+
+        });
 
         this.el.btnAttachContact.on('click', e=>{
-            console.log('contact');
+            
+            this.el.modalContacts.show();
+
         });  
+
+
+        this.el.btnCloseModalContacts.on('click', e=> {
+
+            this.el.modalContacts.hide();
+
+
+        });
 
     }
 
