@@ -1,0 +1,16 @@
+{
+  "name": "whats-app-clone",
+  "version": "1.0.0",
+  "description": "Whats app clone ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": 
+  },
+  "author": "Lucas Vergara",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}
