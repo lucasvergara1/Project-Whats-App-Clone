@@ -1,6 +1,10 @@
-export class MicrophoneController{
+import { ClassEvent } from "../util/ClassEvent";
+
+export class MicrophoneController extends ClassEvent {
 
     constructor(){
+
+        super();
 
         this._stream = null; //Adicionado pelo GP para realizar ajuste relacionado a alteração de URL.createObjectURL(stream)
         navigator.mediaDevices.getUserMedia({
@@ -16,7 +20,7 @@ export class MicrophoneController{
             
            audio.play();
 
-          
+          this.trigger('play', audio);
 
         }).catch(err=>{
 
