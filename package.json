@@ -11,8 +11,13 @@
   "author": "Lucas Vergara",
   "license": "ISC",
   "dependencies": {
-    "pdfjs-dist": "^2.0.489",
-    "webpack": "^3.1.0",
-    "webpack-dev-server": "^2.5.1"
+    "firebase": "^10.8.0",
+    "path-browserify": "^1.0.1",
+    "pdfjs-dist": "^4.0.379"
+  },
+  "devDependencies": {
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.1"
   }
 }
